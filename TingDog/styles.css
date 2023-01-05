@@ -1,0 +1,303 @@
+body{
+    width:100%;
+    height: 100%;
+    overflow-x:hidden;
+    margin: 0;
+}
+
+#main{
+    width: 100%;
+    height: 100%;  
+    background-color: #ff4c68;
+    overflow: hidden;
+    padding: 0 15%;
+}
+
+.alert{
+    margin: 0;
+    border-radius: 0px;
+}
+.navbar{
+    padding:2% 5%;
+    font-size: 20px;
+    background-color: transparent;
+}
+
+.navbar-nav{
+    margin-left:40%;
+}
+
+.navbar-brand{
+    color:white;
+    font-family:monospace
+}
+
+.title-T{
+    font-size: 30px;
+}
+
+.nav-link{
+    color:rgba(250, 250, 250,0.6);
+    margin:0px 20px;
+}
+
+.nav-link:hover{
+    transform: scale(1.1);
+}
+
+.phone-logo{
+    transform: rotate(20deg);
+    margin-bottom:50px;
+}
+
+#main .container{
+    margin-top:5%;
+}
+
+#main h1{
+    font-size: 50px;
+    color: white;
+    margin-bottom: 20%;
+    font-weight: bold;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#main .container button{
+    margin-left:30px;
+    width: 200px;
+    height: 50px;
+    margin-bottom: 20px;
+} 
+
+
+button:active{
+    transform: scale(0.9);
+} 
+
+#features{
+    width: 100%;
+    height: 100%;  
+    overflow: hidden;
+    padding: 15% 15%;
+}
+
+#features i{
+    font-size:100px;
+    color:#ff4c68;
+    margin-bottom: 20px;
+}
+
+#features .col{
+    margin-bottom: 50px;
+}
+
+#others{
+    padding:5% 15%;
+    color:white;
+    background-color: #ff4c68;
+}
+
+#others img{
+    width:100px;
+    height: 100px;
+    border-radius: 100%;
+    margin-top:20px;
+}
+
+#others .carousel-item.active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 50px;
+}
+
+#others .carousel-item{
+    padding:0px 10%;
+}
+
+#others p{
+    font-size: 15px;
+}
+
+#others .dir{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#others .dir p{
+    margin-left:20px;
+    font-style: italic;
+    margin-top:20px;
+}
+
+#others .container{
+    margin-top:100px;
+}
+
+#others .container img{
+    width:300px;
+}
+
+#price{
+    padding: 10% 15%;
+}
+
+#price .card{
+    margin-bottom: 50px;
+}
+
+#download{
+    background-color: #ff4c68;
+    padding: 10% 15%;
+    color:white;
+}
+
+#download h1{
+    font-size: 100px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#download button{
+    width:250px;
+    height: 70px;
+    font-size: 200%;
+    margin-bottom: 30px;
+}
+
+.price-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#download .container{
+    padding: 0 20%;
+}
+
+#download .col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact{
+    padding: 5% 15%;
+    text-align: center;
+}
+
+#contact svg{
+    width: 100px;
+    height: 40px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+#contact p{
+    margin-top: 50px;
+}
+
+@media (max-width:1015px){
+    #main{
+        padding:0px 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #main h1{
+        font-size: 30px;
+    }
+    #main .container{
+        text-align: center;
+    }
+
+    #main .col{
+        text-align: center;
+    }
+    #main img{
+        transform: rotate(0deg) ;
+        width: 350px;
+    }
+
+    #download button{
+        font-size: 100%;
+    }
+
+    #download h1{
+        font-size: 250%;
+    }
+
+    #others .col{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar-nav{
+        margin-left:0;
+        text-align: center;
+    }
+
+    .navbar-brand{
+        margin: 0;
+        margin-right: 10px;
+        text-align: center;
+    }
+}
+
+@media (max-width:500px){
+    #main img{
+        transform: translateX(-5%);
+        width:250px;
+    }
+
+    #main .container button{
+        width: 150px;
+        margin-right: 30px;
+    }
+
+    .navbar-brand{
+        margin: 0;
+        margin-right: 4px;
+        text-align: center;
+    }
+}
+
+@media (max-width:280px){
+    #main img{
+        width:180px;
+    }
+
+    #main .container button{
+        width: 100px;
+        font-size: 10px;
+        height: 30px;
+    }
+
+    #others img{
+        width: 30px;
+        height: 30px;
+    }
+
+    #others .container{
+        margin-top: -5px;
+    }
+}
+
+.loading-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.hidden{
+    display: none;
+}
