@@ -298,6 +298,44 @@ button:active{
     height: 100vh;
 }
 
+.section{
+    opacity: 0;
+    transition: all .5s ease-in;
+}
+
+.section--show{
+    opacity: 1;
+    transition: all .5s ease-in;
+    animation: move-updown 2s forwards
+}
+
+@keyframes move-updown {
+    0%{
+        transform: translateY(8rem);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+   
+
+::-webkit-scrollbar-thumb {
+    background: rgb(255, 47, 71); 
+}
+  
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(255, 88, 108); 
+}
 .hidden{
     display: none;
 }
