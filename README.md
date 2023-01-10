@@ -2,4 +2,4 @@
 
 Feel free to use it, these are just basic website templates
 
-TingDog preview: https://vermillion-chimera-c36ae5.netlify.app/
+TingDog preview: https://effortless-taiyaki-aa39e2.netlify.app/
