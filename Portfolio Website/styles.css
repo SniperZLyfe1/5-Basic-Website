@@ -74,15 +74,14 @@ nav{
 
 .my-bio h1{
     margin-top: 20px;
-    font-family:'Times New Roman', Times, serif;
-    font-weight:bolder;
+    font-family:'DM Serif Display';
     letter-spacing: 2px;
     font-size:400%;
 }
 
 .my-bio p{
    opacity: 0.8;
-   font-family:'Times New Roman', Times, serif;
+   font-family:'DM Serif Display';
    letter-spacing: 2px;
    font-size: 20px;
 }
@@ -109,7 +108,6 @@ nav{
     width: 0%;
     background-color:rgba(215, 184, 103, 0.7);
     transition: width .5s ease-in-out;
-
 }
 
 .my-bio button:hover span{
@@ -131,17 +129,14 @@ nav{
     width: 10px;
 }
   
-  /* Track */
 ::-webkit-scrollbar-track {
     background: transparent; 
 }
-   
-  /* Handle */
+
 ::-webkit-scrollbar-thumb {
     background: black; 
 }
   
-  /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: #555; 
 }
@@ -157,6 +152,7 @@ i{
     animation-fill-mode: forwards;
     transform: translateY(-20px);
     opacity: 0;
+    color:rgb(156, 156, 156);
 }
 
 .section-1 small{
@@ -200,9 +196,9 @@ i{
 
 .section-2 h1{
     opacity: 1;
-    font-family:'Times New Roman', Times, serif;
+    font-family:'DM Serif Display';
     letter-spacing: 2px;
-    font-size: 30px;
+    font-size: 50px;
     margin-top: 30px;
 }
 
@@ -222,7 +218,8 @@ i{
     width:50%;
     height: 100%;
     overflow: hidden;
-    border: 10px solid rgba(201, 159, 52,0.5);
+   border-radius: 50px;
+   border:10px solid black;
 }
 
 .memory-game-div1{
@@ -381,6 +378,147 @@ i{
     font-size:50px;
 }
 
+.section-3{
+   padding: 10% 10%; 
+}
+
+.section-3 small{
+    color:rgb(201, 159, 52);
+    font-family: 'Rubik Vinyl';
+}
+
+.section-3 h1{
+    opacity: 1;
+    font-family:'DM Serif Display';
+    letter-spacing: 2px;
+    font-size: 50px;
+    margin-top: 30px;
+}
+
+.section-4{
+    padding: 10% 10%;
+}
+
+.section-4 small{
+    color:rgb(201, 159, 52);
+    font-family: 'Rubik Vinyl';
+}
+
+.section-4 h1{
+    opacity: 1;
+    font-family:'DM Serif Display';
+    letter-spacing: 2px;
+    font-size: 50px;
+    margin-top: 15px;
+    max-width: 700px;
+    margin-bottom: 50px;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+    text-align: center;
+    padding-top: 150px;
+    font-size: 25px;
+}
+
+.grid-item{
+    border-right:2px solid rgb(115, 115, 115);
+    color:rgb(156, 156, 156);
+}
+
+.grid-item:last-child{
+    transform: scale(2.5);
+}
+
+.contact-container{
+    margin-top: 100px;
+}
+
+.contact-item{
+    margin-top: 20px;
+}
+
+.contact-container{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.form-container{
+    margin-left: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.skills-container{
+    margin-bottom: 100px;
+}
+
+.form-container label{
+    font-family:'DM Serif Display';
+    margin-top:20px;
+    margin-bottom: 10px;
+}
+
+.form-container input{
+    background-color: rgb(27, 27, 27);
+    height: 50px;
+    width: 800px;
+    border-color: transparent;
+    color:white;
+    border-radius:5px;
+}
+
+.form-container textarea{
+    background-color: rgb(27, 27, 27);
+    width: 800px;
+    border-color: transparent;
+    color:white;
+    border-radius:5px;
+}
+
+.form-container input:focus{
+    background-color: white;
+    color:black
+}
+
+.form-container textarea:focus{
+    background-color: white;
+    color:black
+}
+.form-container button{
+    font-family: 'Rubik Vinyl';
+    color:white;
+    background-color: rgb(33, 33, 33);
+    width: 50%;
+    height: 60px;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+    border-color: transparent;
+    border:none;
+    margin-top:20px;
+}
+
+.contact-item{
+    color:rgb(156, 156, 156);
+}
+
+.form-container span{
+    position: absolute;
+    left:0;
+    top:0;
+    height: 100%;
+    width: 0%;
+    background-color:rgba(215, 184, 103, 0.7);
+    transition: width .5s ease-in-out;
+}
+
+.form-container button:hover span{
+    width: 100%;
+    transition: width .5s ease-in-out;
+}
 
 @media (max-width:1220px){
     .project{
@@ -390,6 +528,15 @@ i{
     .portfolio-container h1{
         font-size: 30px;
     }
+
+    .form-container input{
+        width: 500px;
+    }
+    
+    .form-container textarea{
+        width: 500px;
+    }
+    
 }
 
 @media (max-width:960px){
@@ -409,6 +556,46 @@ i{
         font-size: 25px;
     }
 
+    .section-3 h1{
+        font-size: 30px;
+    }
+
+    .section-4 h1{
+        font-size: 25px;
+    }
+
+    .grid-container{
+        grid-template-columns: repeat(2,50%);
+    }
+
+    .grid-item{
+        border:none;
+    }
+
+    .grid-item{
+        padding-bottom: 100px;
+    }
+
+    .grid-item:last-child{
+       padding-top:50px;
+    }
+
+    .navbar img{
+        transform: scale(0.6);
+    }
+
+    .navbar i{
+        font-size:20px;
+    }
+
+    .form-container input{
+        width: 400px;
+    }
+    
+    .form-container textarea{
+        width: 400px;
+    }
+
 }
 
 @media (max-width:690px){
@@ -422,6 +609,24 @@ i{
 
     .section-2 h1{
         font-size: 20px;
+    }
+    .section-3 h1{
+        font-size: 20px;
+    }
+
+    .section-4 h1{
+        font-size: 20px;
+    }
+
+    .contact-container{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin: 0;
+    }
+
+    .form-container{
+        margin: 0;
     }
 
 }
@@ -438,7 +643,6 @@ i{
     .section-2 h1{
         font-size: 15px;
     }
-
 }
 
 a{
@@ -446,8 +650,9 @@ a{
     list-style: none;
     color:white;
     border-color: white;
-
 }
+
+
 .hidden{
     display: none;
 }
