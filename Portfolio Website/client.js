@@ -1,4 +1,3 @@
-
 const lightMode = document.querySelector('.lightbulb-light')
 const nightMode = document.querySelector('.lightbulb-dark')
 
@@ -48,5 +47,9 @@ function toggleLighting(){
     document.body.style.color = currentTextColor
 }
 
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => entry.target.classList.toggle('section--show',entry.isIntersecting))
+})
 
-
+const allSections = document.querySelectorAll('.section')
+allSections.forEach(section => observer.observe(section))

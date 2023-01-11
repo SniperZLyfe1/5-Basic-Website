@@ -3,6 +3,10 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     width: 100%;
     height: 100%;
@@ -30,6 +34,31 @@ nav{
     100%{
         transform:translateY(0);
     }
+}
+
+.quick-nav{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-left: 60%;
+    margin-top: 50px;
+}
+
+.quick-nav a{
+    margin-top:20px;
+    font-family:'DM Serif Display';
+    letter-spacing: 2px;
+    color:grey;
+}
+
+.quick-nav a:hover{
+    text-decoration: underline;
+}
+
+.quick-nav small{
+    color:rgb(201, 159, 52);
+    font-family: 'Rubik Vinyl'
 }
 
 .navbar-brand{
@@ -520,6 +549,22 @@ i{
     transition: width .5s ease-in-out;
 }
 
+.game-trans{
+    position: absolute;
+    top:0;
+    right:0;
+    height: 100%;
+    width: 100%;
+    background-color:rgb(215, 184, 103);
+    animation: game-remove 2s forwards
+}
+
+@keyframes game-remove {
+    100%{
+        width: 0%;
+    }
+}
+
 @media (max-width:1220px){
     .project{
         height: 400px;
@@ -535,6 +580,14 @@ i{
     
     .form-container textarea{
         width: 500px;
+    }
+
+    .quick-nav{
+        display: none;
+    }
+
+    .my-bio{
+        width: 800px;
     }
     
 }
@@ -596,6 +649,9 @@ i{
         width: 400px;
     }
 
+    .my-bio{
+        width: 700px;
+    }
 }
 
 @media (max-width:690px){
@@ -629,6 +685,10 @@ i{
         margin: 0;
     }
 
+    .my-bio{
+        width: 500px;
+    }
+
 }
 
 @media (max-width:380px){
@@ -643,6 +703,10 @@ i{
     .section-2 h1{
         font-size: 15px;
     }
+
+    .my-bio{
+        width: 300px;
+    }
 }
 
 a{
@@ -652,6 +716,16 @@ a{
     border-color: white;
 }
 
+.section{
+    opacity: 0;
+    transition: all 5s ease-in;
+}
+
+.section--show{
+    opacity: 1;
+    transform: translateY(8rem);
+    transition: all 2s ease-in;
+}
 
 .hidden{
     display: none;
