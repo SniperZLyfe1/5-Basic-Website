@@ -188,6 +188,266 @@ i{
     position: relative;
     height: 900px;
 }
+
+.section-2{
+    padding: 0 10%;
+}
+
+.section-2 small{
+    color:rgb(201, 159, 52);
+    font-family: 'Rubik Vinyl';
+}
+
+.section-2 h1{
+    opacity: 1;
+    font-family:'Times New Roman', Times, serif;
+    letter-spacing: 2px;
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+.project{
+    width: 100%;
+    height: 500px;
+    margin-bottom: 50px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.project-inner-div1{
+    position: relative;
+    border:2px solid black;
+    width:50%;
+    height: 100%;
+    overflow: hidden;
+    border: 10px solid rgba(201, 159, 52,0.5);
+}
+
+.memory-game-div1{
+    background-image: url('images/memory_game.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.number-game-div1{
+    background-image: url('images/number_game.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.calculator-div1{
+    background-image: url('images/simple_calculator.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.twitter-clone-div1{
+    background-image: url('images/twitter_clone.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.note-app-div1{
+    background-image: url('images/note_app.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.memory-game-blur{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 166, 255, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-family: 'Rubik Vinyl';
+    transition: all .5s ease-in;
+    opacity: 0;
+}
+
+.number-game-blur{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 166, 255, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-family: 'Rubik Vinyl';
+    transition: all .5s ease-in;
+    opacity: 0;
+}
+
+.calculator-blur{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 166, 255, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-family: 'Rubik Vinyl';
+    transition: all .5s ease-in;
+    opacity: 0;
+}
+
+.twitter-clone-blur{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 166, 255, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-family: 'Rubik Vinyl';
+    transition: all .5s ease-in;
+    opacity: 0;
+}
+
+.note-app-blur{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 166, 255, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-family: 'Rubik Vinyl';
+    transition: all .5s ease-in;
+    opacity: 0;
+}
+
+.memory-game-div1:hover .memory-game-blur{
+    transition: all .5s ease-in;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.number-game-div1:hover .number-game-blur{
+    transition: all .5s ease-in;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.calculator-div1:hover .calculator-blur{
+    transition: all .5s ease-in;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.twitter-clone-div1:hover .twitter-clone-blur{
+    transition: all .5s ease-in;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.note-app-div1:hover .note-app-blur{
+    transition: all .5s ease-in;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.number-game,
+.twitter_clone{
+    justify-content: flex-end;
+}
+
+.portfolio-container{
+    margin-top: 100px;
+}
+
+.portfolio-container h1{
+    color:rgb(201, 159, 52);
+    font-family: 'Rubik Vinyl';
+    margin:0 100px;
+    font-size:50px;
+}
+
+
+@media (max-width:1220px){
+    .project{
+        height: 400px;
+    }
+
+    .portfolio-container h1{
+        font-size: 30px;
+    }
+}
+
+@media (max-width:960px){
+    .project{
+        height: 500px;
+    }
+
+    .project-inner-div1{
+        width: 100%;
+    }
+
+    .portfolio-container h1{
+        display: none;
+    }
+
+    .section-2 h1{
+        font-size: 25px;
+    }
+
+}
+
+@media (max-width:690px){
+    .project{
+        height: 300px;
+    }
+
+    .project-inner-div1{
+        width: 100%;
+    }
+
+    .section-2 h1{
+        font-size: 20px;
+    }
+
+}
+
+@media (max-width:380px){
+    .project{
+        height: 200px;
+    }
+
+    .project-inner-div1{
+        width: 100%;
+    }
+
+    .section-2 h1{
+        font-size: 15px;
+    }
+
+}
+
+a{
+    text-decoration: none;
+    list-style: none;
+    color:white;
+    border-color: white;
+
+}
 .hidden{
     display: none;
 }
