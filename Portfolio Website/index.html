@@ -14,6 +14,23 @@
 </head>
 <body>
 
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header" style="background-color:rgba(215, 184, 103, 0.7)">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">Remainder</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" style="color:black">
+                It doesn't work at the moment!
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Understood</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
     <span class="cursor-hover"></span>
     <nav class="navbar sticky-top">
         <div class="container-fluid">
@@ -33,7 +50,7 @@
                         <small>- - ------- ABOUT</small>
                         <h1></h1>
                         <p></p>
-                        <button><span></span>GET IN TOUCH</button>
+                        <button data-bs-toggle="modal" data-bs-target="#staticBackdrop"><span></span>GET IN TOUCH</button>
                     </div>
                 </div>
                 <div class="col">
@@ -133,15 +150,16 @@
                     <div class="contact-item">Game Development</div>
                 </div>
             </div>
-            <div class="form-container">
+
+            <form class="form-container">
                 <label for="name">Name</label>
-                <input type="text" name="name" id="name">
+                <input type="text" name="name" id="name" required>
                 <label for="email">Email Address</label>
-                <input type="email" name="email" id="email">
+                <input type="email" name="email" id="email" required>
                 <label for="description">Message</label>
-                <textarea name="description" id="description" cols="50" rows="5"></textarea>
-                <button type="submit"><span></span>Submit</button>
-            </div>
+                <textarea name="description" id="description" cols="50" rows="5" required></textarea>
+                <button  data-bs-toggle="modal" data-bs-target="#staticBackdrop" type="submit" value="send"><span></span>Submit</button>
+            </form>
         </div>
     </section>
 

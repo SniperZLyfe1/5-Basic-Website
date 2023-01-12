@@ -19,8 +19,8 @@ function loadTitleText(){
 
 function loadBioText(){
     let bioText = `I'm a software engineer with a focus on the javascript programming language, react,
-     and monga DB. I primarily do web design and application development. Additionally, I want to pursue 
-     a career in game production.`
+     and monga DB. I primarily do web design and application development. Additionally, I'm doing 
+     game development as well.`
     let sum = 1;
     const smallText = document.querySelector('.my-bio p')
     for(let i = 0; i < bioText.length; i++){
