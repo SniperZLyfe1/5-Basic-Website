@@ -1,5 +1,6 @@
 const lightMode = document.querySelector('.lightbulb-light')
 const nightMode = document.querySelector('.lightbulb-dark')
+const cursorHover = document.querySelector('.cursor-hover')  
 
 let currentLighting = 'rgb(41, 41, 41)'
 let currentTextColor = 'white'
@@ -8,7 +9,6 @@ function loadTitleText(){
     let titleText = "Hi, I'm Ali"
     let sum = 1;
     const h1Text = document.querySelector('.my-bio h1')
-        console.log(h1Text)
     for(let i = 0; i < titleText.length; i++){
         setTimeout(() => {
             h1Text.innerHTML += titleText[i]
@@ -23,7 +23,6 @@ function loadBioText(){
      a career in game production.`
     let sum = 1;
     const smallText = document.querySelector('.my-bio p')
-        console.log(bioText)
     for(let i = 0; i < bioText.length; i++){
         setTimeout(() => {
             smallText.innerHTML += bioText[i]
@@ -53,3 +52,16 @@ const observer = new IntersectionObserver(entries => {
 
 const allSections = document.querySelectorAll('.section')
 allSections.forEach(section => observer.observe(section))
+
+const observer2 = new IntersectionObserver(entries => {
+    entries.forEach(entry => entry.target.classList.toggle('game-trans-show',entry.isIntersecting))
+})
+
+const imageBlur = document.querySelectorAll('.game-trans')
+imageBlur.forEach(img => observer2.observe(img))
+
+document.addEventListener('mousemove', (e) => {
+    cursorHover.style.opacity = '1';
+    cursorHover.style.left = `${e.pageX}px`
+    cursorHover.style.top = `${e.pageY}px`
+})

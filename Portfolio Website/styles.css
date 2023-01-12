@@ -36,6 +36,16 @@ nav{
     }
 }
 
+.cursor-hover{
+    position: absolute;
+    border-radius: 100%;
+    width:30px;
+    height: 30px;
+    opacity: 0;
+    transform: translate(-50%,-50%);
+    background-color: rgba(215, 215, 215,0.1);
+}
+
 .quick-nav{
     display: flex;
     justify-content: center;
@@ -247,7 +257,6 @@ i{
     width:50%;
     height: 100%;
     overflow: hidden;
-   border-radius: 50px;
    border:10px solid black;
 }
 
@@ -544,6 +553,12 @@ i{
     transition: width .5s ease-in-out;
 }
 
+.check-out{
+    font-family: fantasy;
+    font-style: italic;
+    color:rgb(215, 184, 103);
+}
+
 .form-container button:hover span{
     width: 100%;
     transition: width .5s ease-in-out;
@@ -556,7 +571,36 @@ i{
     height: 100%;
     width: 100%;
     background-color:rgb(215, 184, 103);
+}
+
+.game-trans-show{
     animation: game-remove 2s forwards
+}
+
+.project-tex{
+    display: flex;
+    flex-direction: column;
+}
+
+.project-tex p{
+    margin:0px  50px 100px;
+    max-width: 600px;
+    margin-top:20px;
+    color:rgb(115, 115, 115)
+}
+
+footer{
+    background-color: rgb(28, 28, 28);
+    padding:5% 10%;
+    text-align: center;
+    font-size: 40px;
+}
+
+footer a{
+    position: relative;
+    margin-left: 20px;
+    cursor: pointer;
+    z-index: 99
 }
 
 @keyframes game-remove {
@@ -588,6 +632,10 @@ i{
 
     .my-bio{
         width: 800px;
+    }
+
+    .project-tex p{
+        display: none;
     }
     
 }
