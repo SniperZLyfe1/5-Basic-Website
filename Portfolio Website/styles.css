@@ -587,7 +587,10 @@ i{
     margin:0px  50px 100px;
     max-width: 600px;
     margin-top:20px;
-    color:rgb(115, 115, 115)
+    color:rgb(115, 115, 115);
+    text-align: center;
+    font-size:1rem;
+    line-height: 40px;
 }
 
 footer{
