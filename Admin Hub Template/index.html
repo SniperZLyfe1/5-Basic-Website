@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <scriptsrc="https://kit.fontawesome.com/8d6ad7d76d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/src/styles.css" />
+    <title>Admin Hub</title>
+</head>
+<body>
+    <div class="navigation-bar">
+        <div class="left-side-nav-items">
+          <i class="fa-solid fa-face-smile emoji-header"></i>
+          <h2 class="header-title">AdminHub</h2>
+          <i class="fa-solid fa-bars toggle-more"></i>
+          <h2 class="header-second-heading">Categories</h2>
+          <div class="input-search-area">
+            <input type="text" />
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+          </div>
+        </div>
+        <div class="right-side-nav-items">
+          <div class="notification-bar">
+            <i class="fa-regular fa-bell toggle-notification"></i>
+            <div class="notification-drop-down hidden">
+              <small>Notification 1</small>
+              <small>Notification 2</small>
+              <small>Notification 3</small>
+              <small>Notification 4</small>
+              <small>Notification 5</small>
+              <small>Notification 6</small>
+            </div>
+          </div>
+  
+          <i class="fa-solid fa-user"></i>
+        </div>
+      </div>
+  
+      <div class="lower-containers">
+        <div class="sidebar-navigation-bar">
+          <div class="items getActive">
+            <i class="fa-solid fa-folder"></i>
+            <h1>Database</h1>
+          </div>
+          <div class="items">
+            <i class="fa-solid fa-inbox"></i>
+            <h1>Inbox</h1>
+          </div>
+          <div class="items">
+            <i class="fa-solid fa-circle-nodes"></i>
+            <h1>Overview</h1>
+          </div>
+          <div class="items">
+            <i class="fa-solid fa-comments"></i>
+            <h1>Messages</h1>
+          </div>
+          <div class="items">
+            <i class="fa-solid fa-users"></i>
+            <h1>Team</h1>
+          </div>
+          <div class="items">
+            <i class="fa-solid fa-gear"></i>
+            <h1>Settings</h1>
+          </div>
+          <div class="items">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            <h1>Logout</h1>
+          </div>
+        </div>
+        <div class="options-container">
+          <!-- DASHBOARD CONTAINER -->
+          <div id="database" class="sections">
+            <div class="options-upper-header">
+              <div class="lower-heading-left">
+                <h1>Dashboard</h1>
+                <p>
+                  <span class="prev">Dashboard</span> >
+                  <span class="next">Home</span>
+                </p>
+              </div>
+              <div class="lower-heading-right">
+                <button>
+                  <i class="fa-solid fa-cloud-arrow-down"></i>Download PDF
+                </button>
+              </div>
+            </div>
+            <div class="options-overview">
+              <div class="options-overview-first">
+                <i class="fa-regular fa-calendar"></i>
+                <div class="options-overview-first-inner">
+                  <h1>1020</h1>
+                  <h2>New Order</h2>
+                </div>
+              </div>
+              <div class="options-overview-second">
+                <i class="fa-solid fa-users-line"></i>
+                <div class="options-overview-second-inner">
+                  <h1>2834</h1>
+                  <h2>Visitors</h2>
+                </div>
+              </div>
+              <div class="options-overview-third">
+                <i class="fa-solid fa-file-invoice-dollar"></i>
+                <div class="options-overview-third-inner">
+                  <h1>$2534</h1>
+                  <h2>Total Sales</h2>
+                </div>
+              </div>
+            </div>
+            <div class="orders-todos-container">
+              <div class="orders-overview">
+                <div class="orders-options">
+                  <h1>Recent Orders</h1>
+                  <div class="orders-options-inner">
+                    <input
+                      type="text"
+                      placeholder="Search user..."
+                      class="hidden"
+                    />
+                    <i
+                      class="fa-solid fa-magnifying-glass toggle-orders-input"
+                    ></i>
+                    <i class="fa-solid fa-sort-down"></i>
+                  </div>
+                </div>
+                <div class="orders-header">
+                  <h2>Users</h2>
+                  <h2>Date Order</h2>
+                  <h2 class="status-title">Status</h2>
+                </div>
+                <div class="orders-detail"></div>
+              </div>
+              <div class="todos-overview">
+                <div class="todos-options">
+                  <h1>Todos</h1>
+                  <div class="todos-options-inner">
+                    <input type="text" class="todo-input hidden" maxlength="20" />
+                    <i class="fa-solid fa-plus toggle-todo-input"></i>
+                    <i class="fa-solid fa-sort-down"></i>
+                  </div>
+                </div>
+                <div class="todos-detail"></div>
+              </div>
+            </div>
+          </div>
+          <!-- END -->
+  
+          <!-- TEAM CONTAINER -->
+          <div id="team" class="sections hidden">
+            <div class="team-header">
+              <h1>TEAM</h1>
+              <p>
+                <span class="prev">Team</span> >
+                <span class="next">Home</span>
+              </p>
+            </div>
+            <div class="team-container"></div>
+          </div>
+  
+          <!-- END -->
+  
+          <div id="overview" class="sections hidden">
+            <div class="security-header">
+              <h1>Overview</h1>
+              <p>
+                <span class="prev">Overview</span> >
+                <span class="next">Home</span>
+              </p>
+            </div>
+            <div class="overview-container">
+              <div class="members-container overview-all-container">
+                <i class="fa-solid fa-universal-access"></i>
+                <div class="options-overview-first-inner">
+                  <h1>210</h1>
+                  <h2>Total Orders</h2>
+                </div>
+              </div>
+              <div class="total-todo-container overview-all-container">
+                <i class="fa-solid fa-clipboard-list"></i>
+                <div class="options-overview-first-inner">
+                  <h1>301</h1>
+                  <h2>Total Todos</h2>
+                </div>
+              </div>
+              <div class="total-sales-container overview-all-container">
+                <i class="fa-brands fa-first-order-alt"></i>
+                <div class="options-overview-first-inner">
+                  <h1>331</h1>
+                  <h2>Total Sales</h2>
+                </div>
+              </div>
+              <div class="total-sales-container overview-all-container">
+                <i class="fa-solid fa-comments"></i>
+                <div class="options-overview-first-inner">
+                  <h1>3022</h1>
+                  <h2>Total Messages</h2>
+                </div>
+              </div>
+              <div class="total-sales-container overview-all-container">
+                <i class="fa-solid fa-clipboard-user"></i>
+                <div class="options-overview-first-inner">
+                  <h1>21</h1>
+                  <h2>Total Staff</h2>
+                </div>
+              </div>
+              <div class="total-sales-container overview-all-container">
+                <i class="fa-solid fa-registered"></i>
+                <div class="options-overview-first-inner">
+                  <h1>65</h1>
+                  <h2>Registered Users</h2>
+                </div>
+              </div>
+              <div class="total-sales-container overview-all-container">
+                <i class="fa-solid fa-people-robbery"></i>
+                <div class="options-overview-first-inner">
+                  <h1>2301</h1>
+                  <h2>Total Visitors</h2>
+                </div>
+              </div>
+              <div class="total-sales-container overview-all-container">
+                <i class="fa-solid fa-ban"></i>
+                <div class="options-overview-first-inner">
+                  <h1>7</h1>
+                  <h2>Banned Users</h2>
+                </div>
+              </div>
+              <div class="total-sales-container overview-all-container">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                <div class="options-overview-first-inner">
+                  <h1>3192</h1>
+                  <h2>Warning Points</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Staff Modal Window -->
+      <span class="blackground-staff-modal hidden"></span>
+      <div class="staff-modal hidden"></div>
+  
+      <!-- notification -->
+      <div class="notify hidden">Error: Some features doesn't work!</div>
+  
+      <script src="src/index.js" ></script>
+</body>
+</html>

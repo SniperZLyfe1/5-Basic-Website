@@ -467,7 +467,7 @@ i{
 }
 
 .grid-item:last-child{
-    transform: scale(2.5);
+        border-right:0;
 }
 
 .contact-container{
@@ -682,9 +682,7 @@ footer a{
         padding-bottom: 100px;
     }
 
-    .grid-item:last-child{
-       padding-top:50px;
-    }
+   
 
     .navbar img{
         transform: scale(0.6);

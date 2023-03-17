@@ -12,9 +12,6 @@ const Navigator = () => {
         <a href="#section-3">
           <i className="fa fa-briefcase"></i> Experience
         </a>
-        <a href="#section-4">
-          <i className="fa fa-address-book"></i> Contact Info
-        </a>
       </div>
     );
   };
