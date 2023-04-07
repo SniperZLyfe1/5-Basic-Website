@@ -103,9 +103,9 @@ nav li:hover{
 }
 
 .products-container{
-    margin:0% 10%;
+    margin:0% 5%;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
     opacity: 0;
@@ -178,7 +178,7 @@ nav li:hover{
 
 .cart-container{
     width:400px;
-    height:700px;
+    height:450px;
     overflow-y: scroll;
 }
 
